@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
+  <!--Title-->
+  <title>Ejercicio 15 de JS</title>
+  <!--CEO-->
+  <meta name="description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <link rel="favicon" href="./img/javascript.ico">
+  <link rel="apple-touch-icon" href="./img/javascript.ico">
+  <meta name="theme-color" content="#f1d863">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Ejercicios de practica de JS- María Eugenia Costa">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <meta property="og:image" name="twitter:image"
+    content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-color">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" rel="noopener"> <img src="./img/javascript.png" alt="hoja con la abreviacion de JavaScript"
+          class="d-inline-block align-text-top" width="42" height="42">
+        <h1>Ejercicios de JavaScript</h1></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar" id="navbarNav"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#ej1">1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej2">2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej3">3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej4">4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej5">5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej6">6</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej7">7</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej8">8</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej9">9</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej10">10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej11">11</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej12">12</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej13">13</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej14">14</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#ej15">15</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej16">16</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej17">17</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej18">18</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej19">19</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej20">20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej21">21</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej22">22</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej23">23</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej24">24</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej25">25</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej26">26</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej27">27</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main class="container m-5">
+    <section class="row" id="ej15">
+      <h2>Ejercicio 15:</h2>
+      <p>Programa una función para convertir números de base binaria a decimal y viceversa, por ejemplo miFuncion(100,2) devolverá 4 base 10 </p>
+      <h3>La forma en que lo hice:</h3>
+      <p>reo la función expresada <strong>convertirBinarioDecimal</strong> que recibe dos parámetros: <strong>numero</strong> y <strong>base</strong>, ambos los inicializo como undefined.</p>
+      <p>Primero valido que el parámetro sea un número y no llegue vacío. Luego valido la base ue sea un número y que no llegue vacía</p>
+      <p>Después veo si la base es 2 entonces debo hacer la conversión usando el método parseInt().</p>
+      <code class="codigo-bloque">const convertirBinarioDecimal = (numero = undefined, base = undefined)=>{</code>
+      <code class="codigo-bloque mx-4">if(numero === undefined) return console.warn("No ingresaste el número a convertir");</code>
+      <code class="codigo-bloque mx-4">if(typeof numero !== "number") return console.error(`El valor ${numero} ingresado no es un número`);</code>
+      <code class="codigo-bloque mx-4">if(base === undefined) return console.warn("No ingresaste la base a convertir");</code>
+      <code class="codigo-bloque mx-4">if(typeof base !== "number") return console.error(`El valor ${base} ingresada no es un número`);
+      </code>
+      <code class="codigo-bloque mx-4">if(base===2){</code>
+      <code class="codigo-bloque mx-5">return console.info(`${numero} en base = ${parseInt(numero,base)} en base 10`)</code>
+      <code class="codigo-bloque mx-3">} else if (base ===10) {</code>
+      <code class="codigo-bloque mx-5">return console.info(`${numero}  base = ${(numero.toString(base))} base 2`);</code>
+      <code class="codigo-bloque mx-3">} else {</code>
+      <code class="codigo-bloque mx-3"> return console.error("El tipo de base a convertir no es válido");</code>
+      <code class="codigo-bloque">}</code>
+      <code class="codigo-bloque">}</code>
+  
+      <p>Llamo a la función vacía para probar mis validaciones</p>
+      <code class="codigo-bloque">convertirBinarioDecimal();</code>
+      <p>Llamo a la función con el primer parámetro como String para probar mis validaciones</p>
+      <code class="codigo-bloque">convertirBinarioDecimal("2");</code>
+      <p>Llamo a la función con el primer parámetro con Number pero el segundo parámetro vacío para probar mis validaciones</p>
+      <code class="codigo-bloque">convertirBinarioDecimal(100,);</code>
+      <p>Llamo a la función con el primer parámetro con Number y el segundo parámetro con String para probar mis validaciones</p>
+      <code class="codigo-bloque">convertirBinarioDecimal(100,"2");</code>
+      <p>Llamo a la función con el número 100 como primer parámetro y el número 2 como segundo parámetro</p>
+      <code class="codigo-bloque">convertirBinarioDecimal(100,2);</code>
+      <p>Llamo a la función y convierto el número binario 4 a base 10</p>
+      <code class="codigo-bloque">convertirBinarioDecimal(4, 10);</code>
+      <p>Con F12 pueden inspeccionar 🧐 por consola el código en acción.</p>
+      <button type="button" class="btn btn-color"><a href="index.html"> volver a inicio</a></button>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto bg-color-footer">
+    <div class="container py-2">
+      <p>Diseñado por <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener" >María  Eugenia Costa</a></p>
+    </div>
+  </footer>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script src="./js/ej15.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
+  <!--Title-->
+  <title>Ejercicio 14 de JS</title>
+  <!--CEO-->
+  <meta name="description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <link rel="favicon" href="./img/javascript.ico">
+  <link rel="apple-touch-icon" href="./img/javascript.ico">
+  <meta name="theme-color" content="#f1d863">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Ejercicios de practica de JS- María Eugenia Costa">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <meta property="og:image" name="twitter:image"
+    content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-color">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" rel="noopener"> <img src="./img/javascript.png" alt="hoja con la abreviacion de JavaScript"
+          class="d-inline-block align-text-top" width="42" height="42">
+        <h1>Ejercicios de JavaScript</h1></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar" id="navbarNav"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#ej1">1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej2">2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej3">3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej4">4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej5">5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej6">6</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej7">7</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej8">8</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej9">9</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej10">10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej11">11</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej12">12</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej13">13</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#ej14">14</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej15">15</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej16">16</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej17">17</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej18">18</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej19">19</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej20">20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej21">21</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej22">22</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej23">23</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej24">24</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej25">25</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej26">26</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej27">27</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main class="container m-5">
+    <section class="row" id="ej14">
+      <h2>Ejercicio 14:</h2>
+      <p>Programa una función para convertir grados Celsius a Fahrenheit y viceversa, por ejemplo miFuncion(0,"C") devolverá 32°F </p>
+      <h3>La forma en que lo hice:</h3>
+      <p>Creo la función expresada <strong>convertirGrados</strong> la cual va a recibir los parámetros <strong>grados</strong>que lo inicializo en undefines y el parámetro <strong>unidad</strong> que lo inicializo en undefined.</p>
+      <p>Con los <strong>if</strong> valido que ingresen no ingresen nada(vacío) o que ingrese un valor que no sea número, hago las mismas validaciones para el segundo parámetro (unidad) en este cao veo que no sea string.</p>
+      <p>Como en la variable unidad solo espero tener la letra C o F, con un if valido que no ingrese más de un caracter con unidad.length o que ingrese otra letra que no sea la S o la G (con una expresion regular).</p>
+      <p>Si unidad es C entonces paso de grados a Celsius, utlizo .Math.round() para redondear el resultado. Aplico la fórmula: para pasar de celsius a fharenheit : X celsius 9/5 + 32 = Y fharenheit</p>
+      <p>Si unidad es F entonces, . Aplico la fórmula para pasar de fharenheit a celsius: Y fharenheit - 32 * 5/9 = X celsius </p>
+      <p>Y finalmente en el else hago con console.error, pero como antes tuve todas mis validaciones, nunca va a pasar lo de este else.</p>
+      <code class="codigo-bloque">const convertirGrados = (grados = undefined, unidad=undefined)=>{</code>
+      <code class="codigo-bloque ms-5"> if(grados === undefined) return console.warn( "No ingresaste grados a convertir");</code>
+      <code class="codigo-bloque mx-5">if(typeof grados !== "number") return console.error(`El valor asignado ${grados} no es un número`);</code>
+      <code class="codigo-bloque mx-5"> if(unidad === undefined) return console.warn( "No ingresaste la unidad de grados a convertir");</code>
+      <code class="codigo-bloque mx-5">if(typeof unidad !== "string") return console.error(`El valor  de ${unidad} asignado no es una cadena de texto`);</code>
+      <code class="codigo-bloque mx-5">if(unidad.length !== 1 || !/(C|F)/.test(unidad)) return console.warn("Valor de unidad inválido");</code>
+      <code class="codigo-bloque mx-5"> if(unidad === "C"){
+        return console.info(`${grados}ºC = ${Math.round((grados*(9/5))+32)}ºF`);</code>
+      <code class="codigo-bloque mx-5"> }else if(unidad === "F"){</code>
+      <code class="codigo-bloque mx-5">return console.info(`${grados}ºF = ${Math.round((grados-32)*(5/9))}ºC`);</code>
+      <code class="codigo-bloque mx-5"> } else {</code>
+      <code class="codigo-bloque mx-5">return console.error("El tipo de grados a convertir no es válido");</code>
+      <code class="codigo-bloque mx-3">}</code>
+      <code class="codigo-bloque">}</code>
+      <p>Llamo a la función sin parámetros para ver si funciona la validación</p>
+      <code class="codigo-bloque">convertirGrados();</code>
+      <p>Llamo a la función con una string como primer parámetro para ver si funciona la validación</p>
+      <code class="codigo-bloque">convertirGrados("2");</code>
+      <p>Llamo a la función con un número como primer parámetro pero sin el segundo parámetro para ver si funciona la validación</p>
+      <code class="codigo-bloque">convertirGrados(2)</code>
+      <p>Llamo a la función con un número como primer parámetro y con un boolean como segundo parámetro para ver si funciona la validación</p>
+      <code class="codigo-bloque">convertirGrados(2,true);</code>
+      <p>Llamo a la función con un número como primer parámetro y con un una string que tenga más de un carater como segundo parámetro para ver si funciona la validación</p>
+      <code class="codigo-bloque">convertirGrados(2,"Hola");</code>
+      <p>Llamo a la función con un número como primer parámetro y con un una string que tiene un sol ocaracter, pero es distinto de C y F,  como segundo parámetro para ver si funciona la validación</p>
+      <code class="codigo-bloque">convertirGrados(2,"e");</code>
+      <p>Llamo a la función con dos parámetros correctos</p>
+      <code class="codigo-bloque">convertirGrados(0,"C");</code>
+      <p>Llama a la función con dos parámtros correctos</p>
+      <code class="codigo-bloque">convertirGrados(32,"F");</code>
+      <p>Con F12 pueden inspeccionar 🧐 por consola el código en acción.</p>
+      <button type="button" class="btn btn-color"><a href="index.html"> volver a inicio</a></button>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto bg-color-footer">
+    <div class="container py-2">
+      <p>Diseñado por <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener" >María  Eugenia Costa</a></p>
+    </div>
+  </footer>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script src="./js/ej14.js"></script>
+  
+</body>
+</html>

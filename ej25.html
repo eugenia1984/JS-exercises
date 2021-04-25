@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
+  <!--Title-->
+  <title>Ejercicio 25 de JS</title>
+  <!--CEO-->
+  <meta name="description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <link rel="favicon" href="./img/javascript.ico">
+  <link rel="apple-touch-icon" href="./img/javascript.ico">
+  <meta name="theme-color" content="#f1d863">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Ejercicios de practica de JS- María Eugenia Costa">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <meta property="og:image" name="twitter:image"
+    content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-color">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" rel="noopener"> <img src="./img/javascript.png" alt="hoja con la abreviacion de JavaScript"
+          class="d-inline-block align-text-top" width="42" height="42">
+        <h1>Ejercicios de JavaScript</h1></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar" id="navbarNav"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#ej1">1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej2">2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej3">3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej4">4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej5">5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej6">6</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej7">7</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej8">8</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej9">9</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej10">10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej11">11</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej12">12</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej13">13</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej14">14</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej15">15</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej16">16</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej17">17</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej18">18</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej19">19</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej20">20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej21">21</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej22">22</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej23">23</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej24">24</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#ej25">25</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej26">26</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej27">27</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main class="container m-5">
+    <section class="row" id="ej25">
+      <h2>Ejercicio 25:</h2>
+      <p>Programa una función que dado un arreglo de elementos, elimine los duplicados, por ejemplo miFuncion(["x", 10, "x", 2, "10", 10, true, true]) devolverá ["x", 10, 2, "10", true]</p>
+      <h3>La forma en que lo hice:</h3>
+      <p>Creo la función expresada <strong>quitarDuplicados</strong> que recibe un <strong>arr</strong> como parámetro y la inicializo como undefined. Valido que no llegue un arreglo vacío y que sea un arreglo.</p>
+      <p>En el <strong>resturn</strong> con un <strong>console.info</strong> creo un objeto con los atributos: <strong>original</strong> (que es la variable <strong>arr</strong> ), <strong>sinDuplicados</strong> (con el método <strong>.filter()</strong> evaluo el elemento, la posición y el mismo arreglo -self-, utilizando <strong>.indexOf()</strong> busco el valor con la posición para no tener elementos repetidos).</p>
+      <p>Otra forma de hacer la parte de return utilizando <strong>.set()</strong> , que permite generar un objeto en el cual no tiene elementos duplicados, sería así:<br>
+      return console.info({ <br>
+      original: arr, <br>
+      sinDuplicados:[...new Set(arr)] <br>
+      })</p>
+      <code class="codigo-bloque">const quitarDuplicados = (arr = undefined) =>{</code>
+      <code class="codigo-bloque mx-3">if(arr === undefined) return console.warn("No ingresaste un arreglo, no puede estar vacío.");</code>
+      <code class="codigo-bloque mx-3">if(!(arr instanceof Array)) return console.error("El valor que ingresaste no es un arreglo");</code>
+      <code class="codigo-bloque mx-3">if(arr.length === 0) return console.error("El arreglo está vacío");</code>
+      <code class="codigo-bloque mx-3">if(arr.length === 1) return console.error("El arreglo debe tener al menos dos elementos");</code>
+      <code class="codigo-bloque mx-3">return console.info({</code>
+      <code class="codigo-bloque mx-5">original: arr,</code>
+      <code class="codigo-bloque mx-5">sinDuplicados: arr.filter((value,index,self) => self.indexOf(value)===index),</code>
+      <code class="codigo-bloque mx-3">})</code>
+      <code class="codigo-bloque">}</code>
+      <p>Llamo a la función vacía para ver mis verificaciones</p>
+      <code class="codigo-bloque">quitarDuplicados();</code>
+      <p>Llamo a la función con un objeto como parámetro  para ver mis verificaciones</p>
+      <code class="codigo-bloque">quitarDuplicados({});</code>
+      <p>Llamo a la función con un Array vacío como parámetro  para ver mis verificaciones</p>
+      <code class="codigo-bloque">quitarDuplicados([]);</code>
+      <p>Llamo a la función con un Array con un solo elemento como parámetro  para ver mis verificaciones</p>
+      <code class="codigo-bloque">quitarDuplicados([10]);</code>
+      <p>Llamo a la función</p>
+      <code class="codigo-bloque">quitarDuplicados([10,2,10,"x","10",true,true]);</code>
+      <p>Con F12 pueden inspeccionar 🧐 por consola el código en acción.</p>
+      <button type="button" class="btn btn-color"><a href="index.html"> volver a inicio</a></button>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto bg-color-footer">
+    <div class="container py-2">
+      <p>Diseñado por <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener" >María  Eugenia Costa</a></p>
+    </div>
+  </footer>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script src="./js/ej25.js"></script>
+  
+</body>
+</html>

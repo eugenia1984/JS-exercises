@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
+  <!--Title-->
+  <title>Ejercicio 27 de JS</title>
+  <!--CEO-->
+  <meta name="description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <link rel="favicon" href="./img/javascript.ico">
+  <link rel="apple-touch-icon" href="./img/javascript.ico">
+  <meta name="theme-color" content="#f1d863">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Ejercicios de practica de JS- María Eugenia Costa">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <meta property="og:image" name="twitter:image"
+    content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-color">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" rel="noopener"> <img src="./img/javascript.png" alt="hoja con la abreviacion de JavaScript"
+          class="d-inline-block align-text-top" width="42" height="42">
+        <h1>Ejercicios de JavaScript</h1></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar" id="navbarNav"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#ej1">1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej2">2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej3">3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej4">4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej5">5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej6">6</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej7">7</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej8">8</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej9">9</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej10">10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej11">11</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej12">12</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej13">13</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej14">14</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej15">15</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej16">16</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej17">17</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej18">18</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej19">19</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej20">20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej21">21</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej22">22</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej23">23</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej24">24</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej25">25</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej26">26</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#ej27">27</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main class="container m-5">
+    <section class="row" id="ej27">
+      <h2>Ejercicio 27:</h2>
+      <p>Programa una clase llamada Pelicula.</p>
+      <p>La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD.</p>
+      <ul>
+        <li>Todos los datos del objeto son obligatorios</li>
+        <li>Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los 7 restantes números</li>
+        <li>Valida que el título no rebase los 100 caracteres.</li>
+        <li>Valida que el director no rebase los 50 caracteres.</li>
+        <li>Valida que el año de estreno sea un número entero de 4 dígitos.</li>
+        <li>Valida que el país o paises sea introducidos en forma de arreglo</li>
+        <li>Valida que los géneros sean introducidos en forma de arreglo.</li>
+        <li>Valida que los géneros introducidos esten dentro de los géneros aceptados*.</li>
+        <li>Crea un método estático que devuelva los géneros aceptados*.</li>
+        <li>Valida que la calificación sea un número entre 0 y 10 pudiendo ser decimal de una posición.</li>
+        <li>Crea un método que devuelva toda la ficha técnica de la película.</li>
+        <li>Apartir de un arreglo con la información de 3 películas genera 3 instancias de la clase de forma automatizada e imprime la ficha técnica de cada película.
+        </li>
+      </ul>
+      <p>* Géneros Aceptados: Action, Adult, Adventure, Animation, Biography, Comedy, Crime, Documentary ,Drama, Family, Fantasy, Film Noir, Game-Show, History, Horror, Musical, Music, Mystery, News, Reality-TV, Romance, Sci-Fi, Short, Sport, Talk-Show, Thriller, War, Western.</p>
+      <h3>La forma en que lo hice:</h3>
+      <p>MDB ID, título y directos son todos de tipo String, me conviene juntor la verificación en un método.</p>
+      <p>Comienzo construyendo la clase película, con su constructor que va a tener como key: id, titulo, director, estreno, pais, generos, calificacion.</p>
+      <p>Comienzo con las validaciones:
+        <ul>
+          <li>Que el IMDB tenga 9 caracteres( los dos primeras sean letras y los siete restantes sean números). Como es un patrón a buscar lo hago con una expresión regular creando un método que se llama calidarIMDB y recibe un id; me aseguro qeu ningún campo entre vacío. Y antes creo la función valdiarCadena que recibe dos parámetros (propiedad y valor) y hago las validaciones.</li>
+          <li>Ceeo el método validarLongitudCadena, recibe la propiedad(título), el valor y la longitud.Y va a validar que no me exdeda de la llongitud de caracteres permitdos. Y creo validarTitulo para validar que el Título o exceda los 100 carcteres.</li>
+          <li>Hago similar para validar que el director no rebase los 50 caracteres con validarDirector()</li>
+          <li>Valido que el año de estreno tenga 4 dígitos con validarNumero() y validarEstreno()</li>
+          <li>Valido que el pais o paises sea introducido en forma de arreglo (por si hay más de un país), valido que sea array, que no sea array vacío, y qeu el array tenga cadena de texto. Esta verificación me sirve para país y para género, por lo que creo el método validadArreglo.</li>
+          <li>Valido que los géneros sean introducidos en forma de arreglo y estén dentro de los géneros aceptados. Creo un método estático que me devuelve los géneros aceptados. Creo el atributo estático del tipo get que se llama listaGEneros que me retorna la lista de los géneros permitidos</li>
+          <li>Valido que la calificación sea entre 0 y 10 y con un decimal con validarCalificacion() y uso el método toFixed() para que solo tenga un decimal.</li>
+          <li>Creo el método que imprima toda la ficha técnica.</li>
+          <li>Formo un arreglo con tres películas con la variable misPelis.</li>
+        </ul>
+      </p>
+      <code class="codigo-bloque">class Pelicula {</code>
+      <code class="codigo-bloque mx-3">constructor({id, titulo, director, estreno, pais, generos, calificacion}) {</code>
+      <code class="codigo-bloque mx-5">this.id = id;</code>
+      <code class="codigo-bloque mx-5">this.titulo = titulo;</code>
+      <code class="codigo-bloque mx-5">this.director = director;</code>
+      <code class="codigo-bloque mx-5">this.estreno = estreno;</code>
+      <code class="codigo-bloque mx-5"> this.pais = pais;</code>
+      <code class="codigo-bloque mx-5">this.generos = generos;</code>
+      <code class="codigo-bloque mx-5">this.calificacion = calificacion;</code>
+      <code class="codigo-bloque mx-5">this.validarIMDB(id);</code>
+      <code class="codigo-bloque mx-5">this.validarTitulo(titulo);</code>
+      <code class="codigo-bloque mx-5">this.validarDirector(director);</code>
+      <code class="codigo-bloque mx-5">this.validarEstreno(estreno);</code>
+      <code class="codigo-bloque mx-5"> this.validarPais(pais);</code>
+      <code class="codigo-bloque mx-5">this.validarGeneros(generos);</code>
+      <code class="codigo-bloque mx-5">this.validarCalificacion(calificacion);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">static get listaGeneros() {</code>
+      <code class="codigo-bloque mx-5">return ["Action", "Adult", "Adventure", "Animation", "Biography", "Comedy", "Crime", "Documentary" ,"Drama", "Family", "Fantasy", "Film Noir", "Game-Show", "History", "Horror", "Musical", "Music", "Mystery", "News", "Reality-TV", "Romance", "Sci-Fi", "Short", "Sport", "Talk-Show", "Thriller", "War", "Western"];</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">static generosAceptados() {</code>
+      <code class="codigo-bloque mx-5"> return console.info(`Los géneros aceptados son: ${Pelicula.listaGeneros.join(", ")}`);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarCadena(propiedad, valor) {</code>
+      <code class="codigo-bloque mx-5">if(!valor) return console.warn( `${propiedad} "${valor}" está vacío`);</code>
+      <code class="codigo-bloque mx-5">if(typeof valor !== "string") return console.error(` ${propiedad} "${valor}" ingresada no es una cadena de texto`);</code>
+      <code class="codigo-bloque mx-5">return true;</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">alidarLongitudCadena(propiedad,valor,longitud){</code>
+      <code class="codigo-bloque mx-5">if(valor.length>longitud) return console.error(` ${propiedad} "${valor} excede el número de caracteres permitidos (${longitud})".`);</code>
+      <code class="codigo-bloque mx-5">return true;</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarNumero(propiedad,valor){</code>
+      <code class="codigo-bloque mx-5">if(!valor) return console.warn(` ${propiedad} "${valor}" está vacío`);</code>
+      <code class="codigo-bloque mx-3">if(typeof valor !== "number") return console.error(` ${propiedad} "${valor}" ingresado no es un número.`);</code>
+      <code class="codigo-bloque mx-3">return true;</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarArreglo(propiedad,valor) {</code>
+      <code class="codigo-bloque mx-5">if(!valor) return console.warn(`${propiedad} "${valor}" está vacío`);</code>
+      <code class="codigo-bloque mx-5">if(!(valor instanceof Array)) return console.error(`${propiedad} "${valor}" ingresado, no es un arreglo`);</code>
+      <code class="codigo-bloque mx-5">if(valor.length === 0 ) return console.error(`${propiedad} "${valor}" no tiene datos`);</code>
+      <code class="codigo-bloque mx-5">for(let cadena of valor){</code>
+      <code class="codigo-bloque mx-5">if(typeof cadena !== "string") return console.error(`El valor ${cadena}, ingresado no es una cadena de texto`);</code>
+      <code class="codigo-bloque mx-3">}</code>
+      <code class="codigo-bloque mx-3">return true;</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarIMDB(id) {</code>
+      <code class="codigo-bloque mx-4">if(this.validarCadena("IMDB id",id)) </code>
+      <code class="codigo-bloque mx-5">if(!(/^([a-z]{2}[0-9]{7})$/.test(id))) </code>
+      <code class="codigo-bloque mx-5">return console.error(`IMDB id ${id} no es válido, debe tener 9 caracteres, los dos primeros letras minúsculas y los siete restantes números`);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarTitulo(titulo) {</code>
+      <code class="codigo-bloque mx-4">if(this.validarCadena("Titulo",titulo))</code>
+      <code class="codigo-bloque mx-5">this.validarLongitudCadena("Titulo",titulo,100);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarDirector(director) {</code>
+      <code class="codigo-bloque mx-4">if(this.validarCadena("Director",director)) </code>
+      <code class="codigo-bloque mx-5">this.validarLongitudCadena("Director",director,50);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarEstreno(estreno) {</code>
+      <code class="codigo-bloque mx-4">if(this.validarNumero("Año de estreno",estreno)) </code>
+      <code class="codigo-bloque mx-4">if(!(/^([0-9]{4})$/.test(estreno)))</code>
+      <code class="codigo-bloque mx-5"> return console.error(`Año de estreno ${estreno} no es válido, debe ser un número de 4 dígitos.`);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">validarPais(pais){</code>
+      <code class="codigo-bloque mx-4">this.validarArreglo("Pais",pais)</code>
+      <code class="codigo-bloque mx-3"></code>
+
+      <code class="codigo-bloque mx-3">validarGeneros(generos){</code>
+      <code class="codigo-bloque mx-4">if(this.validarArreglo("Generos",generos)){</code>
+      <code class="codigo-bloque mx-4"> for(let genero of generos) {</code>
+      <code class="codigo-bloque mx-5">console.log(genero,Pelicula.listaGeneros.includes(genero));</code>
+      <code class="codigo-bloque mx-5">if(!Pelicula.listaGeneros.includes(genero)) {</code>
+      <code class="codigo-bloque mx-5">console.error(`Generos(s) incorrectos "${generos.join(", ")}"`);</code>
+      <code class="codigo-bloque mx-5">Pelicula.generosAceptados();</code>
+      <code class="codigo-bloque mx-5">}</code>
+      <code class="codigo-bloque mx-3">}</code>
+      <code class="codigo-bloque mx-3">}</code>
+      <code class="codigo-bloque">}</code>
+
+      <code class="codigo-bloque mx-3">validarCalificacion(calificacion) {</code>
+      <code class="codigo-bloque mx-4">if(this.validarNumero("Calificación",calificacion)) </code>
+      <code class="codigo-bloque mx-5">return (calificacion<0 || calificacion >10)</code>
+      <code class="codigo-bloque mx-5">?console.error("La calificación tiene que ser en un rango entre 0 y 10")</code>
+      <code class="codigo-bloque mx-5">:this.calificacion = calificacion.toFixed(1);</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque mx-3">fichaTecnica(){</code>
+      <code class="codigo-bloque mx-5">console.info(`Ficha Técnica: \nTítulo: "${this.titulo}"\nDirector: "${this.directos}"\nAño: "${this.estreno}" \nPaís: "${this.pais}.join(", ")}"\nIMDB id: "${this.id}"`)</code>
+      <code class="codigo-bloque mx-3">}</code>
+      <code class="codigo-bloque mx-3">}</code>
+
+      <code class="codigo-bloque">const misPelis = [</code>
+      <code class="codigo-bloque mx-3">{</code>
+      <code class="codigo-bloque mx-5">id: "tt1675434",</code>
+      <code class="codigo-bloque mx-5">titulo: "Intouchable",</code>
+      <code class="codigo-bloque mx-5">director: "olivier Nakache",</code>
+      <code class="codigo-bloque mx-5">estreno: 2012,</code>
+      <code class="codigo-bloque mx-5">pais: ["Francia"],</code>
+      <code class="codigo-bloque mx-5">generos: ["Biography", "Comedy", "Drama"],</code>
+      <code class="codigo-bloque mx-5">calificacion: 8.5</code>
+      <code class="codigo-bloque mx-3">},</code>
+      <code class="codigo-bloque mx-3">{</code>
+      <code class="codigo-bloque mx-5">id: "tt2380307",</code>
+      <code class="codigo-bloque mx-5">titulo: "Coco",</code>
+      <code class="codigo-bloque mx-5">director: "Lee Unkrich",</code>
+      <code class="codigo-bloque mx-5">estreno: 2017,</code>
+      <code class="codigo-bloque mx-5">pais: ["Estados Unidos"],</code>
+      <code class="codigo-bloque mx-5">generos: ["Animation", "Adventure", "Family"],</code>
+      <code class="codigo-bloque mx-5">calificacion: 8.4</code>
+      <code class="codigo-bloque mx-3">},</code>
+      <code class="codigo-bloque mx-3">{</code>
+      <code class="codigo-bloque mx-5">id: "tt3011894",</code>
+      <code class="codigo-bloque mx-5">titulo: "Relatos salvajes",</code>
+      <code class="codigo-bloque mx-5">director: "Damián Szifron",</code>
+      <code class="codigo-bloque mx-5">estreno: 2041,</code>
+      <code class="codigo-bloque mx-5">pais: ["Argentina"],</code>
+      <code class="codigo-bloque mx-5">generos: ["Comedy", "Drama", "Thriller"],</code>
+      <code class="codigo-bloque mx-5">calificacion: 8.1</code>
+      <code class="codigo-bloque mx-3">},</code>
+      <code class="codigo-bloque mx-3">];</code>
+      <code class="codigo-bloque">misPelis.forEach(el=>new Pelicula(el).fichaTecnica());</code>
+  
+      <p>Con F12 pueden inspeccionar 🧐 por consola el código en acción.</p>
+      <button type="button" class="btn btn-color"><a href="index.html"> volver a inicio</a></button>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto bg-color-footer">
+    <div class="container py-2">
+      <p>Diseñado por <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener" >María  Eugenia Costa</a></p>
+    </div>
+  </footer>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script src="./js/ej27.js"></script>
+  
+</body>
+</html>

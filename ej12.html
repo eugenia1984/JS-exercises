@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
+  <!--Title-->
+  <title>Ejercicio 12 de JS</title>
+  <!--CEO-->
+  <meta name="description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <link rel="favicon" href="./img/javascript.ico">
+  <link rel="apple-touch-icon" href="./img/javascript.ico">
+  <meta name="theme-color" content="#f1d863">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Ejercicios de practica de JS- María Eugenia Costa">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
+  <meta property="og:image" name="twitter:image"
+    content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-color">
+
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" rel="noopener"> <img src="./img/javascript.png" alt="hoja con la abreviacion de JavaScript"
+          class="d-inline-block align-text-top" width="42" height="42">
+        <h1>Ejercicios de JavaScript</h1></a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="navbar" id="navbarNav"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#ej1">1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej2">2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej3">3</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej4">4</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej5">5</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej6">6</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej7">7</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej8">8</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej9">9</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej10">10</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej11">11</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#ej12">12</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej13">13</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej14">14</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej15">15</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej16">16</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej17">17</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej18">18</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej19">19</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej20">20</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej21">21</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej22">22</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej23">23</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej24">24</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej25">25</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej26">26</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ej27">27</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container m-5">
+    <section class="row" id="ej12">
+      <h2>Ejercicio 12:</h2>
+      <p>Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, por ejemplo miFuncion(7) devolverá true</p>
+      <h3>La forma en que lo hice:</h3>
+      <p>Creo una función expresada <strong>numeroPrimo</strong> qu recibe como parámetro una variable que se llama <strong>numero</strong> y la asigno a undefined.</p>
+      <p>Primero valido que no llegue vacía, luego que efectivamente esté pasando un número, que no sea 0, 1, ni negativo.</p>
+      <p>Creo la variable <strong>divisible</strong>, boolean, inicializada en False</p>
+      <p>Uso un <strong>for</strong>, <strong>i</strong> lo inicializo en 2 (no se puede dividir por 0, y el 1 ya lo excluí en las validaciones), en cada iteración va aumentando de 1 en 1 hasta que llegue al número anterior al número ingresado y guardado en la variable <strong>numero</strong>.</p>
+      <p>Dentro con un <strong>if</strong> veo si el modulo de i es 0 entonces paso la variable divisible a true y finalizo el for con un <strong>break; </strong> así corto el ciclo ya que se descarta sea primo y no quiero que siga con el for.</p>
+      <p>Sino para a la parte del <strong>return</strong> donde si el número es divisible avisa con mensaje por consola y si no es divisible también avisa por mensaje en consola.</p>
+      <code class="codigo-bloque">const numeroPrimo = (numero=undefined)=>{</code>
+      <code class="codigo-bloque mx-3">if(numero===undefined) return console.warn("No ingresaste un número");</code>
+      <code class="codigo-bloque mx-3">if(typeof numero !== "number") return console.error(`El valor ${numero} ingresado no es un número`);</code>
+      <code class="codigo-bloque mx-3">if (numero === 0) return console.error("El número ingresado no puede ser 0");</code>
+      <code class="codigo-bloque mx-3">if (numero === 1) return console.error("El número ingresado no puede ser 1");</code>
+      <code class="codigo-bloque mx-3">if(Math.sign(numero) === -1) return console.error("El número ingresado no puede ser negativo");</code>
+      <code class="codigo-bloque mx-3"> let divisible = false;</code>
+      <code class="codigo-bloque mx-3">for (let i = 2; i< numero; i++){ </code>
+      <code class="codigo-bloque mx-5">if((numero % i) === 0){</code>
+      <code class="codigo-bloque mx-5">divisible = true;</code>
+      <code class="codigo-bloque mx-5">break;</code>
+      <code class="codigo-bloque mx-5">}</code>
+      <code class="codigo-bloque mx-3">}</code>
+      <code class="codigo-bloque mx-3">return(divisible)</code>
+      <code class="codigo-bloque mx-5">?console.log(`El número ${numero} no es primo`)</code>
+      <code class="codigo-bloque mx-5">:console.log(`El número ${numero} si es primo`);</code>
+      <code class="codigo-bloque">}</code>
+  
+      <p>Pruebo llamando a la función numeroPrimo sin ningún parámetro, para corroborar la validación</p>
+
+      <code class="codigo-bloque">numeroPrimo();</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro string</p>
+      <code class="codigo-bloque">numeroPrimo("320");</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro boolean</p>
+      <code class="codigo-bloque">numeroPrimo(true);</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro 0</p>
+      <code class="codigo-bloque">numeroPrimo(0);</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro 1</p>
+      <code class="codigo-bloque">numeroPrimo(1);</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro un número negativo</p>
+      <code class="codigo-bloque">numeroPrimo(-13);</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro un número primo</p>
+      <code class="codigo-bloque">numeroPrimo(13);</code>
+      <p>Pruebo llamando a la función numeroPrimo con un parámetro un número no primo</p>
+      <code class="codigo-bloque">numeroPrimo(200);</code>
+      <p>Con F12 pueden inspeccionar 🧐 por consola el código en acción.</p>
+      <button type="button" class="btn btn-color"><a href="index.html"> volver a inicio</a></button>
+    </section>
+  </main>
+
+  <footer class="footer mt-auto bg-color-footer">
+    <div class="container py-2">
+      <p>Diseñado por <a href="https://www.linkedin.com/in/maríaeugeniacosta" target="_blank" rel="noopener" >María  Eugenia Costa</a></p>
+    </div>
+  </footer>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+  </script>
+  <script src="./js/ej12.js"></script>
+  
+</body>
+</html>
