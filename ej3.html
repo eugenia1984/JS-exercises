@@ -78,17 +78,17 @@
       <h2>Ejercicio 3:</h2>
       <p>Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, por ejemplo miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']</p>
       <h3>La forma en que lo hice:</h3>
-      <p>Creo una funcion <strong>cadenaAArreglo</strong> que toma como parámetros <strong>cadena</strong> que la declaro como string vacía y <strong>separador</strong> que lo declaro como undefined. </p>
+      <p>Creo una funcion <strong>cadenaArreglo</strong> que toma como parámetros <strong>cadena</strong> que la declaro como string vacía y <strong>separador</strong> que lo declaro como undefined. </p>
       <p>Primero veo si ingreso una cadena, sino con console.warn aviso.</p>
       <p>Segundo veo si ingreso un separador, sino con console.warn aviso que no ingreso el caracter saprador.</p>
       <p>Si está todo bien con el método <strong>.split()</strong> separo la cadena.</p>
-      <code class="codigo-bloque">const cadenaAArreglo = (cadena = "",separador=undefined)=></code>
+      <code class="codigo-bloque">const cadenaArreglo = (cadena = "",separador=undefined)=></code>
       <code class="codigo-bloque mx-2">(!cadena)</code>
       <code class="codigo-bloque mx-3">?console.warn("No ingresaste una cadena de texto")</code>
       <code class="codigo-bloque mx-3">:(separador === undefined)</code>
       <code class="codigo-bloque mx-5">?console.warn("No ingresaste el caracter separador")</code>
       <code class="codigo-bloque mx-5">:console.info(cadena.split(separador));</code>
-      <p>Llamo a la función cadenaAArreglo, como string ingreso los meses del año y como separador ingreso una ,</p>
+      <p>Llamo a la función cadenaArreglo, como string ingreso los meses del año y como separador ingreso una ,</p>
       <code class="codigo-bloque">cadenaArreglo("Ene,Feb,Mar,Apr,May,Jun;Jul;Ago,Sep,Oct,Nov,Dic",",");</code>
       <p>Hago la validación de que no ingrese una cadena de texto, con: </p>
       <code class="codigo-bloque">cadenaArreglo();</code>
