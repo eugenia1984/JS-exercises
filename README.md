@@ -6,7 +6,7 @@ I made a webpage where I can put together some of my JavaScript practice exercis
 
 ## What I did 🚀
 
-I create a lnading page with different sections, every section is one exercise, if you would like to see how I did it just need to click in the button and you can see the code, if you press F12 and go to the console you can se the code in action.
+I create a landing page with different sections, every section is one exercise, if you would like to see how I did it just need to click in the button and you can see the code, if you press F12 and go to the console you can se the code in action.
 
 ## Content 🚀
 This Project only has one master branch, it was a small project so it did not need more branches.
