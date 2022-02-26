@@ -9,3 +9,7 @@ const cadenaAArreglo = (cadena = "",separador=undefined)=>
       :console.info(cadena.split(separador));
 //Llamo a la función cadenaAArreglo, como string ingreso los meses del año y como separador ingreso una ,
 cadenaAArreglo("Ene,Feb,Mar,Apr,May,Jun;Jul;Ago,Sep,Oct,Nov,Dic",",");
+//Hago la validación de que no ingrese una cadena de texto
+cadenaArreglo();
+// Hago la validación de que no ingreso el caracter separaor
+cadenaArreglo("Hola Mundo");
