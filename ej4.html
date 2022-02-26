@@ -90,7 +90,7 @@
       <code class="codigo-bloque mx-5">if(!texto) return console.warn("No ingresaste un texto");</code>
       <code class="codigo-bloque mx-5"> if(veces === undefined) return console.warn("No ingresaste el número de veces a repetir el texto");</code>
       <code class="codigo-bloque mx-5">if(veces = 0) return console.error("El número de veces no puede ser 0");</code>
-      <code class="codigo-bloque mx-5"> if(matchMedia.toString(veces)===-1) return console.error("El número de veces no puede ser negativo");</code>
+      <code class="codigo-bloque mx-5"> if(Math.sign(veces)===-1) return console.error("El número de veces no puede ser negativo");</code>
       <code class="codigo-bloque mx-5">for(let i=1;i<=veces;i++)console.info(`${texto},${i}`);</code>   
       <code class="codigo-bloque mx-5">}</code>
       <p>llamo a la función cuatro veces para ver que las comprobaciones estén bien</p>
