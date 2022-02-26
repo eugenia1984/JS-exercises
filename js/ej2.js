@@ -1,5 +1,5 @@
-//Creo la función recortarTexto que tome los parámetros cadena(la declaro como string vacía) y longitud(la declaro como undefined).
-//Con arrow function y el operador ternario(identado, para que quede más expresivo elcódigo)
+//Creo la función recortarTexto que tome los parámetros cadena (la declaro como string vacía) y longitud (la declaro como undefined).
+//Con arrow function y el operador ternario (identado, para que quede más expresivo el código)
 
 const recortarTexto = (cadena = "",longitud=undefined)=>
   (!cadena)
@@ -12,3 +12,5 @@ const recortarTexto = (cadena = "",longitud=undefined)=>
 recortarTexto("Hola Mundo",4);
 //Hago la prueba ingresando solo el string para que me corrobore que no ingrese longitud.
 recortarTexto("Hola Mundo");
+// Hago la prueba ingresando una cadena vacia, para corroborar que ingrese una cadena de texto.
+recortarTexto("",5);
