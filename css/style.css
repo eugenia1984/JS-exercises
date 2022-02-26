@@ -12,6 +12,11 @@
 body {
   color: var(--text-gray);
 }
+
+/**** Main ****/
+main.container.m-5 {
+    max-width: 90%;
+}
 /****** Header*******/
 header .navbar-color{
   background-color: var(--primary-color);
