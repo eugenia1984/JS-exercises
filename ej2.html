@@ -25,7 +25,7 @@
     content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
   <meta property="og:image" name="twitter:image"
     content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
-  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JS-exercises/ej2.html">
 </head>
 <body>
   <header>
@@ -79,12 +79,13 @@
       <p>Programa una función que te devuelva el texto recortado según el número de caracteres indicados, por ejemplo miFunción("Hola Mundo", 4) devolverá "Hola"</p>
       <h3>La forma en que lo hice:</h3>
       <p>Creo la función <strong>recortarTexto</strong> que tome los parámetros <strong>cadena</strong> (la declaro como string vacía) y <strong>longitud</strong> (la declaro como undefined).</p>
-      <p>Con arrow function y el operador ternario (identado, para que quede más expresivo elcódigo)</p>
+      <p>Con arrow function y el operador ternario (identado, para que quede más expresivo el código).</p>
+      <p>Utilizo el método .slice() para hacer el corte del String.</p>
       <code class="codigo-bloque">const recortarTexto = (cadena = "",longitud=undefined)=></code>
       <code class="codigo-bloque mx-2" >   (!cadena)</code>
       <code class="codigo-bloque mx-3">?console.warn("No ingresaste una cadena de texto")</code>
       <code class="codigo-bloque mx-3">:(longitud === undefined)</code>
-      <code class="codigo-bloque mx-5"> ?console.warn("No ingresaste la longitud para recortar el testo")</code>
+      <code class="codigo-bloque mx-5"> ?console.warn("No ingresaste la longitud para recortar el texto")</code>
       <code class="codigo-bloque mx-5">:console.info(cadena.slice(0,longitud));</code>
       <p>Llamo a la función recortarTexto, con la cadena="HolaMundo" y la longitud de 4.</p>
       <code class="codigo-bloque">recortarTexto("Hola Mundo",4);</code>
