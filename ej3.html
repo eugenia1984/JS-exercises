@@ -25,7 +25,7 @@
     content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy María Eugenia Costa, Desarrolladora Full Stack">
   <meta property="og:image" name="twitter:image"
     content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
-  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JavaScript-Exercises/index.html">
+  <meta property="og:url" name="twitter:url" content="https://eugenia1984.github.io/JS-exercises/ej3.html">
 </head>
 <body>
   <header>
@@ -78,8 +78,10 @@
       <h2>Ejercicio 3:</h2>
       <p>Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, por ejemplo miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal']</p>
       <h3>La forma en que lo hice:</h3>
-      <p>Creo una funcion <strong>cadenaAArreglo</strong> que tomoe como parámetros <strong>cadena</strong> que la declaro como string vacía y <strong>separador</strong> que lo declaro como undefined. </p>
-      <p>Primero veo si ingreso una cadena, sino con console.warn aviso.Segundo veo si ingreso un separador, sino con console.warn aviso que no ingreso el caracter saprador. Si está todo bien con el método <strong>.split()</strong> separo la cadena</p>
+      <p>Creo una funcion <strong>cadenaAArreglo</strong> que toma como parámetros <strong>cadena</strong> que la declaro como string vacía y <strong>separador</strong> que lo declaro como undefined. </p>
+      <p>Primero veo si ingreso una cadena, sino con console.warn aviso.</p>
+      <p>Segundo veo si ingreso un separador, sino con console.warn aviso que no ingreso el caracter saprador.</p>
+      <p>Si está todo bien con el método <strong>.split()</strong> separo la cadena.</p>
       <code class="codigo-bloque">const cadenaAArreglo = (cadena = "",separador=undefined)=></code>
       <code class="codigo-bloque mx-2">(!cadena)</code>
       <code class="codigo-bloque mx-3">?console.warn("No ingresaste una cadena de texto")</code>
@@ -87,7 +89,7 @@
       <code class="codigo-bloque mx-5">?console.warn("No ingresaste el caracter separador")</code>
       <code class="codigo-bloque mx-5">:console.info(cadena.split(separador));</code>
       <p>Llamo a la función cadenaAArreglo, como string ingreso los meses del año y como separador ingreso una ,</p>
-      <code class="codigo-bloque">cadenaAArreglo("Ene,Feb,Mar,Apr,May,Jun;Jul;Ago,Sep,Oct,Nov,Dic",",");</code>
+      <code class="codigo-bloque">cadenaArreglo("Ene,Feb,Mar,Apr,May,Jun;Jul;Ago,Sep,Oct,Nov,Dic",",");</code>
       <p>Con F12 pueden inspeccionar 🧐 por consola el código en acción.</p>
       <button type="button" class="btn btn-color"><a href="index.html"> volver a inicio</a></button>
     </section>
